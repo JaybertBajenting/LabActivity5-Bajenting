@@ -1,5 +1,6 @@
 package SimpleCalc;
 import javax.swing.*;
+import java.io.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,6 +15,10 @@ public class SimpleCalcGUI extends JFrame{
 
     public SimpleCalcGUI() {
 
+
+    }
+
+    public static void main(String[] args) {
 
     }
 
