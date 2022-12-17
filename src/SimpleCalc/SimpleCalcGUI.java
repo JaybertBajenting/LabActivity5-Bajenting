@@ -39,6 +39,7 @@ public class SimpleCalcGUI extends JFrame{
                         case "*":
                             total = a * b;
                             result.setText(Integer.toString(total));
+                            break;
                         case "/":
                             total = a/b;
                             result.setText(Integer.toString(total));
@@ -55,7 +56,11 @@ public class SimpleCalcGUI extends JFrame{
     }
 
     public static void main(String[] args) {
-
+        SimpleCalcGUI c = new SimpleCalcGUI();
+        c.setTitle("Sample Calculator");
+        c.setVisible(true);
+        c.setContentPane(c.panel1);
+        c.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
