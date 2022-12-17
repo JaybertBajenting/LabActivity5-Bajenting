@@ -16,6 +16,42 @@ public class SimpleCalcGUI extends JFrame{
     public SimpleCalcGUI() {
 
 
+        btnCompute.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+
+                    int a = Integer.parseInt(tfNumber1.getText());
+                    int b = Integer.parseInt(tfNumber2.getText());
+                    int total = 0;
+
+                    String op = cbOperations.getSelectedItem().toString();
+
+                    switch(op){
+                        case "+":
+                            total = a + b;
+                            result.setText(Integer.toString(total));
+                            break;
+                        case "-":
+                            total = a-b;
+                            result.setText(Integer.toString(total));
+                            break;
+                        case "*":
+                            total = a * b;
+                            result.setText(Integer.toString(total));
+                        case "/":
+                            total = a/b;
+                            result.setText(Integer.toString(total));
+                            break;
+
+                    }
+
+
+                }catch(Exception f){
+                    JOptionPane.showMessageDialog(btnCompute,"Invalid Input");
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
