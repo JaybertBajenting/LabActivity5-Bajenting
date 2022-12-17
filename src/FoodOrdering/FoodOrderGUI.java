@@ -20,7 +20,14 @@ public class FoodOrderGUI extends  JFrame{
     private JRadioButton rb10;
     private JRadioButton rb15;
 
+    public static void main(String[] args) {
+        FoodOrderGUI f = new FoodOrderGUI();
+        f.setTitle("Food Ordering System");
+        f.setVisible(true);
+        f.setContentPane(f.panelMain);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+    }
 
 }
 
