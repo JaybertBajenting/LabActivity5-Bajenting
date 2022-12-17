@@ -40,6 +40,10 @@ public class LeapYearGUI extends JFrame{
     }
 
     public static void main(String[] args) {
-
+        LeapYearGUI l = new LeapYearGUI();
+        l.setTitle("Leap Year Checker");
+        l.setContentPane(l.panel1);
+        l.setVisible(true);
+        l.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
