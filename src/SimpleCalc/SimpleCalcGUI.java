@@ -61,6 +61,7 @@ public class SimpleCalcGUI extends JFrame{
         c.setVisible(true);
         c.setContentPane(c.panel1);
         c.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 
 }
